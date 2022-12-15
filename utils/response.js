@@ -13,7 +13,7 @@ const sendSuccessResponse = (response, code = 200, data, message) => {
     return response.status(code).json({ data, msg: message });
 };
 
-export {
+module.exports = {
     sendFailureResponse,
     sendSuccessResponse,
 };
