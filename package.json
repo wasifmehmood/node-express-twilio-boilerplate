@@ -4,6 +4,7 @@
   "description": "Node, express and sequelize boilerplate for OTP generation with Twilio",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon src/app.js",
     "migrate:db": "npx sequelize-cli db:migrate",
     "migrate:undo": "npx sequelize-cli db:migrate:undo",
     "migrate:undo:all": "npx sequelize-cli db:migrate:undo:all",
