@@ -1,0 +1,61 @@
+{
+  "name": "node-express-twilio-boilerplate",
+  "version": "1.0.0",
+  "description": "Node, express and sequelize boilerplate for OTP generation with Twilio",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "migrate:db": "npx sequelize-cli db:migrate",
+    "migrate:undo": "npx sequelize-cli db:migrate:undo",
+    "migrate:undo:all": "npx sequelize-cli db:migrate:undo:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [
+    "node",
+    "node.js",
+    "boilerplate",
+    "express",
+    "express-validator",
+    "rest",
+    "api",
+    "sql",
+    "mysql2",
+    "sequelize",
+    "sequelize-cli",
+    "eslint",
+    "twilio",
+    "otp",
+    "generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wasifmehmood/node-otp-generator.git"
+  },
+  "author": "Wasif Mehmood <wasifmehmood20@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wasifmehmood/node-otp-generator/issues"
+  },
+  "homepage": "https://github.com/wasifmehmood/node-otp-generator#readme",
+  "dependencies": {
+    "axios": "^1.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.2",
+    "mysql2": "^2.3.3",
+    "otp-generator": "^4.0.0",
+    "sequelize": "^6.27.0",
+    "twilio": "^3.83.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-security": "^1.7.1",
+    "nodemon": "^2.0.20",
+    "sequelize-cli": "^6.5.2"
+  }
+}
