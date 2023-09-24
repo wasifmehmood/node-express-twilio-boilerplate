@@ -1,5 +1,5 @@
 {
-  "name": "otp-generator",
+  "name": "node-express-twilio-boilerplate",
   "version": "1.0.0",
   "description": "Node, express and sequelize boilerplate for OTP generation with Twilio",
   "main": "app.js",
