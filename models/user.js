@@ -26,30 +26,3 @@ module.exports = (sequelize, DataTypes) => {
 
   return User;
 };
-
-// export default (sequelize, DataTypes) => {
-
-//   class User extends Model {};
-
-//   User.init({
-//     name: {
-//       type: DataTypes.STRING,
-//     },
-//     phone_number: {
-//       type: DataTypes.STRING,
-//     },
-//     otp: {
-//       type: DataTypes.STRING,
-//     },
-//     otp_expiration_date: {
-//       type: DataTypes.STRING,
-//     }
-//   }, {
-//     sequelize,
-//     modelName: 'User',
-//   });
-
-//   User.associate = (models) => { /** define association here */ }
-
-//   return User;
-// };
