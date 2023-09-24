@@ -6,8 +6,6 @@ const router = express.Router();
 
 router.use('/users', userRoutes);
 
-router.use('*', (req, res) => {
-    return sendFailureResponse(res, 404, {}, [], 404, {code: 404, message: 'Route does not exist.'});
-});
+router.use('*', (req, res) => sendFailureResponse(res, 404, {}, [], 404, { code: 404, message: 'Route does not exist.' }));
 
 module.exports = router;

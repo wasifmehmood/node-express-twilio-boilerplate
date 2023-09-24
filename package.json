@@ -17,6 +17,7 @@
     "node.js",
     "boilerplate",
     "express",
+    "express-validator",
     "rest",
     "api",
     "sql",

@@ -1,6 +1,7 @@
 const {
-  Model
+  Model,
 } = require('sequelize');
+
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     /**
@@ -16,13 +17,13 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     phone_number: DataTypes.STRING,
     otp: DataTypes.STRING,
-    otp_expiration_date: DataTypes.DATE
+    otp_expiration_date: DataTypes.DATE,
   }, {
     sequelize,
     modelName: 'User',
   });
 
-  User.associate = (models) => { /** define association here */ }
+  User.associate = (models) => { /** define association here */ };
 
   return User;
 };
